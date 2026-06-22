@@ -24,11 +24,10 @@ export type Offer = {
 };
 
 export type PaginationMeta = {
-  totalItems: number;
-  itemCount: number;
-  itemsPerPage: number;
+  page: number;
+  limit: number;
+  total: number;
   totalPages: number;
-  currentPage: number;
 };
 
 export type PaginatedAuctions = {
@@ -37,7 +36,7 @@ export type PaginatedAuctions = {
 };
 
 export type AuthResponse = {
-  accessToken: string;
+  access_token: string;
 };
 
 export type User = {
